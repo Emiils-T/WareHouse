@@ -17,7 +17,7 @@ Ask::displayAsk();
 $input = (int)readline("Enter selection: \n");
 
 switch ($input) {
-    case '1':
+    case 1:
         $customerName = (string)readline("Customer name: ");
         $accessCode = (string)readline("Enter personal access Code: ");
 
@@ -26,7 +26,7 @@ switch ($input) {
         $userList->addToUserList($customer);
         $selectedUser = $customer;
         break;
-    case '2':
+    case 2:
         $userList = new UserList($baseDIR);
         $userList->displayUsers();
 
